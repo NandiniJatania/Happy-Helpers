@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+
+    <link rel="stylesheet" href="Style.css">
+    <script src="jscript.js" defer></script>
+
+</head>
+<body>
+    
+    <div class="piano">
+        <button id="btn1">Click to Change White<br> Keys</button>
+        <div class="key" id="white" data-key="C"></div>
+        <div class="key" id="black" data-key="Ds"></div>
+        <div class="key" id="white1" data-key="D"></div>
+        <div class="key" id="black1" data-key="E"></div>
+        <div class="key" id="white2" data-key="Fs"></div>
+        <div class="key" id="white3" data-key="F"></div>
+        <div class="key" id="black2" data-key="Gs"></div>
+        <div class="key" id="white4" data-key="G"></div>
+        <div class="key" id="black3" data-key="As"></div>
+        <div class="key" id="white5" data-key="A"></div>
+        <div class="key" id="black4" data-key="Bs"></div>
+        <div class="key" id="white6" data-key="B"></div>
+        <button id="btn2"> Click to Change Black<br>Keys</button>
+    </div>
+ 
+    
+    <script type = "text/javascript">
+
+document.getElementById("btn1").addEventListener("click", function() {
+  var x = document.getElementById("white");
+  x.style.animation="myanim 3s infinite";
+});
+
+document.getElementById("btn1").addEventListener("click", function() {
+    var y = document.getElementById("white1");
+  y.style.animation="myanim1 3s infinite";
+});
+
+document.getElementById("btn1").addEventListener("click", function() {
+    var a = document.getElementById("white2");
+  a.style.animation="myanim2 3s infinite";
+});
+
+document.getElementById("btn1").addEventListener("click", function() {
+    var b = document.getElementById("white3");
+  b.style.animation="myanim3 3s infinite";
+});
+
+document.getElementById("btn1").addEventListener("click", function() {
+    var c = document.getElementById("white4");
+  c.style.animation="myanim4 3s infinite";
+});
+document.getElementById("btn1").addEventListener("click", function() {
+    var d = document.getElementById("white5");
+  d.style.animation="myanim5 3s infinite";
+});
+document.getElementById("btn1").addEventListener("click", function() {
+    var e = document.getElementById("white6");
+  e.style.animation="myanim6 3s infinite";
+});
+
+document.getElementById("btn2").addEventListener("click", function() {
+    var f = document.getElementById("black");
+  f.style.animation="my 3s infinite";
+});
+
+document.getElementById("btn2").addEventListener("click", function() {
+    var g = document.getElementById("black1");
+  g.style.animation="my1 3s infinite";
+});
+document.getElementById("btn2").addEventListener("click", function() {
+    var h = document.getElementById("black2");
+  h.style.animation="my2 3s infinite";
+});
+
+document.getElementById("btn2").addEventListener("click", function() {
+    var i = document.getElementById("black3");
+  i.style.animation="my3 3s infinite";
+});
+
+document.getElementById("btn2").addEventListener("click", function() {
+    var j = document.getElementById("black4");
+  j.style.animation="my4 3s infinite";
+});
+  
+  
+        </script>
+
+    <audio src="261-C.mp3" id="C"></audio>
+    <audio src="311-D-sharp.mp3" id="Ds"></audio>
+    <audio src="293-D.mp3" id="D"></audio>
+    <audio src="329-E.mp3" id="E"></audio>
+    <audio src="369F-sharp.mp3" id="Fs"></audio>
+    <audio src="349-F.mp3" id="F"></audio>
+    <audio src="415-G-sharp.mp3" id="Gs"></audio>
+    <audio src="391-G.mp3" id="G"></audio>
+    <audio src="466-A-sharp.mp3" id="As"></audio>
+    <audio src="440-A.mp3" id="A"></audio>
+    <audio src="495-B.mp3" id="Bs"></audio>
+    <audio src="987-B.mp3" id="B"></audio>
+    <audio src="987-B.mp3" id="B"></audio>
+    <audio src="987-B.mp3" id="B"></audio>
+ 
+</body>
+</html>
